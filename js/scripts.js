@@ -20,6 +20,9 @@
 
 
       (function () {
+        var first = $("#color-selector").val();
+        $('#gallery img.' + first).addClass('visible');
+
         $('select').on('change', function() {
             $('#gallery img.' + this.value).addClass('visible');
 
